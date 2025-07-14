@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cal AI - Natural Nutrition Tracking</title>
+    <meta name="description" content="Track your nutrition naturally with AI-powered food recognition and analysis" />
+    
+    <!-- Pastoral Theme Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+      /* Prevent flash of unstyled content */
+      body {
+        font-family: 'Inter', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #f6f8f4 0%, #e9f0e4 50%, #d4e1cb 100%);
+      }
+      
+      /* Loading spinner */
+      .loading-spinner {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border: 3px solid #d4e1cb;
+        border-radius: 50%;
+        border-top-color: #6d8f54;
+        animation: spin 1s ease-in-out infinite;
+      }
+      
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+      
+      /* Initial loading state */
+      #root:empty::after {
+        content: '';
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40px;
+        height: 40px;
+        border: 3px solid #d4e1cb;
+        border-radius: 50%;
+        border-top-color: #6d8f54;
+        animation: spin 1s ease-in-out infinite;
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-ByV5G3U1.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-k_toXIM-.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
