@@ -11,6 +11,7 @@ import { FoodAnalyzer } from '@/components/FoodAnalysis/FoodAnalyzer'
 import { FoodHistory } from '@/components/History/FoodHistory'
 import { NutritionGoals } from '@/components/Goals/NutritionGoals'
 import './app/globals.css'
+import { Analytics } from "@vercel/analytics/next"
 
 // Create a client
 const queryClient = new QueryClient({
@@ -172,6 +173,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
         <AppContent />
+        <Analytics />
       </AuthProvider>
     </QueryClientProvider>
   )
